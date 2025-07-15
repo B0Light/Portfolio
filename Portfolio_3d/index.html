@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 포트폴리오</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- 로딩 화면 -->
+    <div class="loading">
+        <div class="loader">
+            <div class="loader-text">포트폴리오 로딩 중...</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI 오버레이 -->
+    <div class="overlay">
+        <div class="info-panel">
+            <h1>내 3D 포트폴리오</h1>
+            <p>WASD 또는 방향키로 이동, 마우스로 카메라 조작</p>
+        </div>
+        
+        <div class="portfolio-info">
+            <div class="portfolio-item" data-target="about">
+                <h3>소개</h3>
+                <p>About Me</p>
+            </div>
+            <div class="portfolio-item" data-target="projects">
+                <h3>프로젝트</h3>
+                <p>My Projects</p>
+            </div>
+            <div class="portfolio-item" data-target="contact">
+                <h3>연락처</h3>
+                <p>Contact</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js 캔버스 -->
+    <canvas id="webgl"></canvas>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 
